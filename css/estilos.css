@@ -1,0 +1,169 @@
+*{
+	padding: 0;
+	margin: 0 auto;
+	border: 0;
+	outline: inherit;
+	
+}
+
+
+@font-face{
+	font-family: roboto;
+    src: url(roboto.ttf);
+}
+p{
+	font-family: roboto;
+}
+
+@font-face{
+	font-family: abel;
+	src: url(abel.tff);
+}
+
+
+h1{
+	font-family: abel;
+}
+
+h2{
+	font-family: abel;
+}
+body{
+	overflow-y: hidden;
+}
+.lienzo{
+	width: 200%;
+	height: 100vh; 
+	background:white;
+	display: flex;
+}
+.logo{
+	margin-top: 5px;
+	margin-left: 300px;
+	width: 700px;
+	height: 700px;
+}
+.cont{
+	float: left;
+	height: 100vh;
+	width: 100%;
+}
+
+.uno{
+
+}
+
+.ico{
+	color: black;
+	font-size: 2em;
+	z-index: 1;
+	position: absolute;
+	top: 20px;
+	left: 25px;
+	float: left;
+}
+.pasar{
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    font-size: 3em;
+    z-index: 1;  
+    cursor: pointer;
+    color: #0984e3; 
+}
+.devolber{
+	position: fixed;
+    left: 20px;
+    bottom: 10px;
+    font-size: 3em;
+    z-index: 1; 
+    display: none;
+    cursor: pointer;
+    color: #636e72;
+}
+.dos{
+	position: relative;
+}
+.btns{
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 70px;
+}
+.btns div{
+	margin: 0 60px;
+	width: 30px;
+	height: 30px;
+	background: white;
+	z-index: 1;
+	border-radius: 100%;
+	transition: 0.2s linear;
+}
+
+.btns div:hover{
+	background: #25CCF7;
+}
+.btn_sec2{
+	font-size: 2em; 
+	position: absolute;
+	left: 100px;
+	bottom: 30px;
+}
+.btn_sec2 i{
+	color: black;
+	margin: 60px 20px;
+	transition: 0.1s linear;
+	background: #f5f6fa;
+    padding: 10px;
+    border-radius: 100%;
+}
+.btn_sec2 i:hover{
+	color: #1B9CFC;
+}
+
+/*nube*/
+
+.nube{
+	width: 120px;
+	height: 50px;
+	background-size: 100% 100%;
+	position: absolute;	
+
+}
+
+.nube:nth-child(1) {
+	background-image: url(nube1.png);
+	animation: movimiento1 10s infinite;
+}
+
+.nube:nth-child(2) {
+	margin-top: 60px;
+	background-image: url(nube2.png);
+	animation: movimiento2 30s infinite;
+}
+
+.nube:nth-child(3) {
+	margin-top: 120px;
+	background-image: url(nube3.png);
+	animation: movimiento2 50s infinite;
+}
+
+.nube:nth-child(4) {
+	margin-top: 190px;
+	background-image: url(nube4.png);
+	animation: movimiento1 40s infinite;
+}
+
+
+
+@keyframes movimiento1 {
+	from { margin-left: 100%;}
+	to {margin-left: -30%;}
+}
+
+@keyframes movimiento2 {
+	from {margin-left: -30%;}
+	to {margin-left: 100%;}
+}
